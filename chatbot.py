@@ -4,6 +4,10 @@ import streamlit as st
 import chromadb
 from langchain.prompts import PromptTemplate
 from langchain_groq import ChatGroq
+import sys
+import pysqlite3
+
+sys.modules["sqlite3"] = pysqlite3
 
 # 🔑 Configuration de l'API Groq
 API_KEY = "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"
